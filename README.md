@@ -7,4 +7,4 @@
 
 <b>Backend Developer</b>: Jiho Lee
 
-<b>Android Developers</b>: Claire Zhou, Christopher Price
+<b>Android Developers</b>: Claire Zhou, Christopher S. Price
