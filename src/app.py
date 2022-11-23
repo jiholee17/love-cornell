@@ -1,6 +1,6 @@
 import json
 from flask import Flask, request
-from db import db, Letter
+from db import db, Letter, User
 
 import datetime
 import users_dao
@@ -136,6 +136,13 @@ def logout():
 
 # LETTER ROUTES ----------------------------------------------------------------
 
+@app.route("/users/")
+def get_users():
+    """
+    Endpoint for getting all users
+    """
+    return success_response({"users": [u.serialize() for u in User.query.all()]})
+
 @app.route("/letters/")
 def get_all_letters():
   """
@@ -151,21 +158,99 @@ def post_letter():
     """
     body = json.loads(request.data)
     receiver = body.get('receiver')
+    sender = body.get('sender')
     content = body.get('content')
     color = body.get('color')
+    timestamp = datetime.datetime.now()
 
-    if receiver is None or content is None or color is None:
+    if receiver is None or sender is None or content is None or color is None:
         return failure_response("Required fields missing.", 400)
 
     new_letter = Letter(
         receiver = receiver,
+        sender = sender,
         content = content,
-        color = color
+        color = color,
+        timestamp = timestamp
     )
 
     db.session.add(new_letter)
     db.session.commit()
     return success_response(new_letter.serialize(), 201)
+
+@app.route("/saved/")
+def get_saved():
+    """
+    Endpoint for getting a user's saved letters
+    """
+    success, session_token = extract_token(request)
+    if not success:
+        return failure_response("Could not extract session token.", 400)
+
+    user = users_dao.get_user_by_session_token(session_token)
+
+    if user is None or not user.verify_session_token(session_token):
+        return failure_response("Invalid session token.", 400)
+
+    return success_response({"saved": [l.serialize() for l in user.favorites]})
+
+@app.route("/saved/add/", methods=["POST"])
+def add_to_saved():
+    """
+    Endpoint for adding a letter to a user's saved letters
+    """
+    success, session_token = extract_token(request)
+    if not success:
+        return failure_response("Could not extract session token.", 400)
+
+    user = users_dao.get_user_by_session_token(session_token)
+
+    if user is None or not user.verify_session_token(session_token):
+        return failure_response("Invalid session token.", 400)
+
+    body = json.loads(request.data)
+    letter_id = body.get('letter_id')
+    if letter_id is None:
+        return failure_response("Required fields missing.", 400)
+
+    letter = Letter.query.filter_by(id=letter_id).first()
+    if letter is None:
+        return failure_response("Letter not found.")
+    
+    for f in user.favorites:
+        if f.id == letter_id:
+            return failure_response("Letter already saved.")
+
+    user.favorites.append(letter)
+    db.session.commit()
+    return success_response(letter.serialize(), 200)
+
+@app.route("/saved/remove/", methods=["POST"])
+def remove_from_saved():
+    """
+    Endpoint for removing a letter from a user's saved letters
+    """
+    success, session_token = extract_token(request)
+    if not success:
+        return failure_response("Could not extract session token.", 400)
+
+    user = users_dao.get_user_by_session_token(session_token)
+    if user is None or not user.verify_session_token(session_token):
+        return failure_response("Invalid session token.", 400)
+
+    body = json.loads(request.data)
+    letter_id = body.get('letter_id')
+    if letter_id is None:
+        return failure_response("Required fields missing.", 400)
+
+    letter = Letter.query.filter_by(id=letter_id).first()
+    if letter is None:
+        return failure_response("Letter not found.")
+
+    user.favorites.remove(letter)
+    db.session.commit()
+    return success_response(letter.serialize())
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8000, debug=True)
