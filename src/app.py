@@ -1,6 +1,6 @@
 import json
 from flask import Flask, request
-from db import db, Letter, User
+from db import db, Letter, User, Draft
 
 import datetime
 import users_dao
@@ -134,6 +134,114 @@ def logout():
     return success_response({"message": "You have successfully logged out."})
 
 
+# DRAFT LETTER ROUTES ----------------------------------------------------------
+
+@app.route("/drafts/", methods=["POST"])
+def draft_letter():
+    """
+    Endpoint for drafting a letter
+    """
+    success, session_token = extract_token(request)
+    if not success:
+        return failure_response("Could not extract session token.", 400)
+
+    user = users_dao.get_user_by_session_token(session_token)
+
+    if user is None or not user.verify_session_token(session_token):
+        return failure_response("Invalid session token.", 400)
+
+    serialized_user = user.serialize()
+    user_id = serialized_user.get('id')
+
+    body = json.loads(request.data)
+    receiver = body.get('receiver')
+    sender = body.get('sender')
+    content = body.get('content')
+    color = body.get('color', "FFFFFF")
+
+    if receiver is None or sender is None or content is None:
+        return failure_response("Required fields missing.", 400)
+
+    new_letter = Draft(
+        receiver = receiver,
+        sender = sender,
+        content = content,
+        color = color,
+        user_id = user_id
+    )
+
+    db.session.add(new_letter)
+    db.session.commit()
+    return success_response(new_letter.serialize(), 201)
+
+@app.route("/drafts/edit/", methods=["POST"])
+def edit_draft():
+    """
+    Endpoint for editing a draft
+    """
+    body = json.loads(request.data)
+    draft_id = body.get('draft_id')
+
+    if draft_id is None:
+        return failure_response("Required fields missing.", 400)
+
+    draft = Draft.query.filter_by(id=draft_id).first()
+    if draft is None:
+        return failure_response("Letter not found.")
+    
+    body = json.loads(request.data)
+    receiver = body.get('receiver', draft.receiver)
+    sender = body.get('sender', draft.sender)
+    content = body.get('content', draft.content)
+    color = body.get('color', draft.color)
+
+    draft.receiver = receiver
+    draft.sender = sender
+    draft.content = content
+    draft.color = color
+
+    db.session.commit()
+    return success_response(draft.serialize())
+
+
+@app.route("/drafts/post/", methods=["POST"])
+def post_draft():
+    """
+    Endpoint for posting a drafted letter
+    """
+    body = json.loads(request.data)
+    draft_id = body.get('draft_id')
+
+    if draft_id is None:
+        return failure_response("Required fields missing.", 400)
+
+    draft = Draft.query.filter_by(id=draft_id).first()
+    if draft is None:
+        return failure_response("Letter not found.")
+
+    letter = draft.serialize()
+
+    receiver = letter.get('receiver')
+    sender = letter.get('sender')
+    content = letter.get('content')
+    color = letter.get('color', "FFFFFF")
+    timestamp = datetime.datetime.now()
+
+    db.session.delete(draft)
+
+    new_letter = Letter(
+        receiver = receiver,
+        sender = sender,
+        content = content,
+        color = color,
+        timestamp = timestamp
+    )
+
+    db.session.add(new_letter)
+    db.session.commit()
+    return success_response(new_letter.serialize(), 201)
+    
+
 # LETTER ROUTES ----------------------------------------------------------------
 
 @app.route("/users/")
@@ -160,10 +268,10 @@ def post_letter():
     receiver = body.get('receiver')
     sender = body.get('sender')
     content = body.get('content')
-    color = body.get('color')
+    color = body.get('color', "FFFFFF")
     timestamp = datetime.datetime.now()
 
-    if receiver is None or sender is None or content is None or color is None:
+    if receiver is None or sender is None or content is None:
         return failure_response("Required fields missing.", 400)
 
     new_letter = Letter(

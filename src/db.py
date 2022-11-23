@@ -23,6 +23,7 @@ class User(db.Model):
   email = db.Column(db.String, nullable=False, unique=True)
   password_digest = db.Column(db.String, nullable=False)
   favorites = db.relationship("Letter", secondary=associate_users_with_favorites, back_populates="users")
+  drafts = db.relationship("Draft", cascade="delete")
 
   # Session information
   session_token = db.Column(db.String, nullable=False, unique=True)
@@ -79,7 +80,8 @@ class User(db.Model):
     return {
       "id": self.id,
       "email": self.email,
-      "favorites": [l.serialize() for l in self.favorites]
+      "favorites": [l.serialize() for l in self.favorites],
+      "drafts": [d.serialize() for d in self.drafts]
     }
 
 
@@ -108,4 +110,28 @@ class Letter(db.Model):
       "content": self.content,
       "color": self.color,
       "timestamp": ago
+    }
+
+class Draft(db.Model):
+  """
+  Draft model
+  """
+  __tablename__ = "draft"
+  id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+  receiver = db.Column(db.String, nullable=False)
+  sender = db.Column(db.String, nullable=False)
+  content = db.Column(db.String, nullable=False)
+  color = db.Column(db.String, nullable=False)
+  user_id = db.Column(db.Integer, db.ForeignKey("user.id"), nullable=False)
+
+  def serialize(self):
+    """
+    Serializes a Draft object
+    """
+    return {
+      "id": self.id,
+      "receiver": self.receiver,
+      "sender": self.sender,
+      "content": self.content,
+      "color": self.color
     }
