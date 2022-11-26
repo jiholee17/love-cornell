@@ -1,9 +1,10 @@
 import json
 from flask import Flask, request
 from db import db, Letter, User, Draft
-
 import datetime
 import users_dao
+# import requests
+# from bs4 import BeautifulSoup
 
 app = Flask(__name__)
 db_filename = "data.db"
@@ -36,6 +37,7 @@ def extract_token(request):
         return False, failure_response("Invalid authorization")
     
     return True, bearer_token
+
 
 # USER ROUTES ------------------------------------------------------------------
 
@@ -240,6 +242,28 @@ def post_draft():
     db.session.add(new_letter)
     db.session.commit()
     return success_response(new_letter.serialize(), 201)
+
+@app.route("/drafts/<int:draft_id>/", methods=["DELETE"])
+def delete_draft(draft_id):
+    """
+    Endpoint for deleting a draft
+    """
+    success, session_token = extract_token(request)
+    if not success:
+        return failure_response("Could not extract session token.", 400)
+
+    user = users_dao.get_user_by_session_token(session_token)
+
+    if user is None or not user.verify_session_token(session_token):
+        return failure_response("Invalid session token.", 400)
+
+    draft = Draft.query.filter_by(id=draft_id).first()
+    if draft is None:
+        return failure_response("Draft not found.")
+    
+    db.session.delete(draft)
+    db.session.commit()
+    return success_response(draft)
     
 
 # LETTER ROUTES ----------------------------------------------------------------
