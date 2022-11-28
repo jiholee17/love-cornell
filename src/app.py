@@ -176,22 +176,17 @@ def draft_letter():
     db.session.commit()
     return success_response(new_letter.serialize(), 201)
 
-@app.route("/drafts/edit/", methods=["POST"])
-def edit_draft():
+@app.route("/drafts/edit/<int:draft_id>/", methods=["POST"])
+def edit_draft(draft_id):
     """
     Endpoint for editing a draft
     """
     body = json.loads(request.data)
-    draft_id = body.get('draft_id')
-
-    if draft_id is None:
-        return failure_response("Required fields missing.", 400)
 
     draft = Draft.query.filter_by(id=draft_id).first()
     if draft is None:
         return failure_response("Letter not found.")
     
-    body = json.loads(request.data)
     receiver = body.get('receiver', draft.receiver)
     sender = body.get('sender', draft.sender)
     content = body.get('content', draft.content)
@@ -206,17 +201,11 @@ def edit_draft():
     return success_response(draft.serialize())
 
 
-@app.route("/drafts/post/", methods=["POST"])
-def post_draft():
+@app.route("/drafts/post/<int:draft_id>/", methods=["POST"])
+def post_draft(draft_id):
     """
     Endpoint for posting a drafted letter
     """
-    body = json.loads(request.data)
-    draft_id = body.get('draft_id')
-
-    if draft_id is None:
-        return failure_response("Required fields missing.", 400)
-
     draft = Draft.query.filter_by(id=draft_id).first()
     if draft is None:
         return failure_response("Letter not found.")
@@ -263,7 +252,7 @@ def delete_draft(draft_id):
     
     db.session.delete(draft)
     db.session.commit()
-    return success_response(draft)
+    return success_response(draft.serialize())
     
 
 # LETTER ROUTES ----------------------------------------------------------------
@@ -326,8 +315,8 @@ def get_saved():
 
     return success_response({"saved": [l.serialize() for l in user.favorites]})
 
-@app.route("/saved/add/", methods=["POST"])
-def add_to_saved():
+@app.route("/saved/add/<int:letter_id>/", methods=["POST"])
+def add_to_saved(letter_id):
     """
     Endpoint for adding a letter to a user's saved letters
     """
@@ -339,11 +328,6 @@ def add_to_saved():
 
     if user is None or not user.verify_session_token(session_token):
         return failure_response("Invalid session token.", 400)
-
-    body = json.loads(request.data)
-    letter_id = body.get('letter_id')
-    if letter_id is None:
-        return failure_response("Required fields missing.", 400)
 
     letter = Letter.query.filter_by(id=letter_id).first()
     if letter is None:
@@ -357,8 +341,8 @@ def add_to_saved():
     db.session.commit()
     return success_response(letter.serialize(), 200)
 
-@app.route("/saved/remove/", methods=["POST"])
-def remove_from_saved():
+@app.route("/saved/remove/<int:letter_id>/", methods=["POST"])
+def remove_from_saved(letter_id):
     """
     Endpoint for removing a letter from a user's saved letters
     """
@@ -369,11 +353,6 @@ def remove_from_saved():
     user = users_dao.get_user_by_session_token(session_token)
     if user is None or not user.verify_session_token(session_token):
         return failure_response("Invalid session token.", 400)
-
-    body = json.loads(request.data)
-    letter_id = body.get('letter_id')
-    if letter_id is None:
-        return failure_response("Required fields missing.", 400)
 
     letter = Letter.query.filter_by(id=letter_id).first()
     if letter is None:
