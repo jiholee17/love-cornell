@@ -138,6 +138,23 @@ def logout():
 
 # DRAFT LETTER ROUTES ----------------------------------------------------------
 
+@app.route("/drafts/")
+def get_drafts():
+    """
+    Endpoint for getting a user's drafts
+    """
+    success, session_token = extract_token(request)
+    if not success:
+        return failure_response("Could not extract session token.", 400)
+
+    user = users_dao.get_user_by_session_token(session_token)
+
+    if user is None or not user.verify_session_token(session_token):
+        return failure_response("Invalid session token.", 400)
+    
+    return success_response({"drafts": [d.serialize() for d in user.drafts]})
+
+
 @app.route("/drafts/", methods=["POST"])
 def draft_letter():
     """
