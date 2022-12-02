@@ -4,11 +4,11 @@ package com.example.lovecornellandroid.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.lovecornellandroid.R;
@@ -26,7 +26,7 @@ public final class FragmentMyLettersBinding implements ViewBinding {
   public final TabItem drafts;
 
   @NonNull
-  public final FragmentContainerView fragmentContainerView2;
+  public final FrameLayout fragmentContainerView2;
 
   @NonNull
   public final TextView headBg;
@@ -47,7 +47,7 @@ public final class FragmentMyLettersBinding implements ViewBinding {
   public final TabLayout tabLayout;
 
   private FragmentMyLettersBinding(@NonNull ConstraintLayout rootView, @NonNull TabItem drafts,
-      @NonNull FragmentContainerView fragmentContainerView2, @NonNull TextView headBg,
+      @NonNull FrameLayout fragmentContainerView2, @NonNull TextView headBg,
       @NonNull TextView headText, @NonNull TextView headText2,
       @NonNull ConstraintLayout otherConstraintLayout, @NonNull TabItem saved,
       @NonNull TabLayout tabLayout) {
@@ -96,7 +96,7 @@ public final class FragmentMyLettersBinding implements ViewBinding {
       }
 
       id = R.id.fragmentContainerView2;
-      FragmentContainerView fragmentContainerView2 = ViewBindings.findChildViewById(rootView, id);
+      FrameLayout fragmentContainerView2 = ViewBindings.findChildViewById(rootView, id);
       if (fragmentContainerView2 == null) {
         break missingId;
       }

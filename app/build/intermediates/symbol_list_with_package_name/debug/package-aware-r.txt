@@ -1970,6 +1970,8 @@ dimen abc_text_size_subhead_material
 dimen abc_text_size_subtitle_material_toolbar
 dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
+dimen activity_horizontal_margin
+dimen activity_vertical_margin
 dimen appcompat_dialog_background_inset
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
@@ -2872,6 +2874,7 @@ id edit_button
 id edit_query
 id edit_text
 id elastic
+id email_text
 id embed
 id end
 id endToStart
@@ -2950,6 +2953,8 @@ id linear
 id listMode
 id list_item
 id locale
+id login_activity_button
+id login_button
 id ltr
 id marquee
 id masked
@@ -3041,6 +3046,7 @@ id parent
 id parentPanel
 id parentRelative
 id parent_matrix
+id password_text
 id password_toggle
 id path
 id pathRelative
@@ -3096,6 +3102,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id signup_button
 id sin
 id skipCollapsed
 id skipped
@@ -3130,6 +3137,8 @@ id stretch
 id submenuarrow
 id submit_area
 id supportScrollUp
+id switch_login_text
+id switch_signup_text
 id tabLayout
 id tabMode
 id tag_accessibility_actions
@@ -3345,11 +3354,13 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout drafts_cell_activity
+layout entry_activity
 layout fragment_drafts
 layout fragment_forum
 layout fragment_my_letters
 layout fragment_post
 layout fragment_saved
+layout login_acitivity
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3408,6 +3419,7 @@ layout saved_cell_activity
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout signup_activity
 layout support_simple_spinner_dropdown_item
 menu my_menu
 mipmap ic_launcher
@@ -3441,6 +3453,8 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string action_settings
+string action_sign_in
+string action_sign_in_short
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
@@ -3463,8 +3477,11 @@ string forum_item
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
+string invalid_password
+string invalid_username
 string item_view_role_description
 string letters_item
+string login_failed
 string m3_sys_motion_easing_emphasized
 string m3_sys_motion_easing_emphasized_accelerate
 string m3_sys_motion_easing_emphasized_decelerate
@@ -3562,8 +3579,12 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string post_item
 string previous
+string prompt_email
+string prompt_password
 string search_menu_title
 string status_bar_notification_info_overflow
+string title_activity_login
+string welcome
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

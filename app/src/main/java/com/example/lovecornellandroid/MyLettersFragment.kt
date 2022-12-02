@@ -43,6 +43,10 @@ class MyLettersFragment : Fragment() {
 
         val tabLayout : TabLayout = view.findViewById(R.id.tabLayout)
 
+        childFragmentManager.beginTransaction()
+            .add(R.id.fragmentContainerView2, DraftsFragment.newInstance(param1 = param1!!))
+            .commit()
+
         tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab) {
                 when(tab.position) {
@@ -50,12 +54,12 @@ class MyLettersFragment : Fragment() {
                     // on the fragment container in your activity (see section 6.3)
                     0 -> {
                         childFragmentManager.beginTransaction()
-                            .replace(R.id.fragmentContainerView2, DraftsFragment.newInstance())
+                            .replace(R.id.fragmentContainerView2, DraftsFragment.newInstance(param1 = param1!!))
                             .commit()
                     }
                     1 -> {
                         childFragmentManager.beginTransaction()
-                            .replace(R.id.fragmentContainerView2, SavedFragment.newInstance())
+                            .replace(R.id.fragmentContainerView2, SavedFragment.newInstance(param1 = param1!!))
                             .commit()
                     }
                 }

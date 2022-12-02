@@ -1,17 +1,17 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.lovecornellandroid.app-mergeDebugResources-43:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.example.lovecornellandroid.app-mergeDebugResources-45:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "C:\\Users\\zhoux\\Desktop\\Cornell\\CS1998_Android\\Hackathon\\love-cornell\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
-                        "startOffsets": "100",
+                        "startOffsets": "102",
                         "endLines": "14",
                         "endColumns": "12",
-                        "endOffsets": "807"
+                        "endOffsets": "821"
                     },
                     "to": {
                         "startLines": "9",

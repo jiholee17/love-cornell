@@ -42,8 +42,8 @@ class SavedFragment : Fragment() {
 
         // TODO: get real dataset from DB
         val letterList = ArrayList<Letter>()
-        letterList.add(Letter("receiver","sender","Just some sentence to fill up the space. Hello. Just some sentence to fill up the space. Hello. Just some sentence to fill up the space. Hello. Just some sentence to fill up the space. Hello. Just some sentence to fill up the space. Hello. Just some sentence to fill up the space. Hello. Just some sentence to fill up the space. Hello.","#fefbdc","12/12/12"))
-        letterList.add(Letter("receiver2","sender2","HIIIII","#ffd7b3","22/22/22"))
+//        letterList.add(Letter("receiver","sender","Just some sentence to fill up the space. Hello. Just some sentence to fill up the space. Hello. Just some sentence to fill up the space. Hello. Just some sentence to fill up the space. Hello. Just some sentence to fill up the space. Hello. Just some sentence to fill up the space. Hello. Just some sentence to fill up the space. Hello.","#fefbdc","12/12/12"))
+//        letterList.add(Letter("receiver2","sender2","HIIIII","#ffd7b3","22/22/22"))
 
         val adapter = SavedLetterAdaptor(letterList)
         recyclerView.adapter = adapter

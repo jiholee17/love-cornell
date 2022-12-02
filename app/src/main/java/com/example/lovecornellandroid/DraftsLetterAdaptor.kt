@@ -1,17 +1,14 @@
 package com.example.lovecornellandroid
 
-import android.content.Intent
 import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.activity.result.ActivityResultLauncher
-import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.widget.AppCompatImageButton
 import androidx.recyclerview.widget.RecyclerView
 
-class DraftsLetterAdaptor(private val dataSet: List<Letter>) :
+class DraftsLetterAdaptor(private val dataSet: ArrayList<Draft>) :
 
     RecyclerView.Adapter<DraftsLetterAdaptor.ViewHolder>() {
 

@@ -42,11 +42,20 @@ class DraftsFragment : Fragment() {
         val recyclerView: RecyclerView = view.findViewById(R.id.recyclerView)
 
         // TODO: get real dataset from DB
-        val letterList = ArrayList<Letter>()
-        letterList.add(Letter("draft receiver","draft sender","draft Just some sentence to fill up the space. Hello. Just some sentence to fill up the space. Hello. Just some sentence to fill up the space. Hello. Just some sentence to fill up the space. Hello. Just some sentence to fill up the space. Hello. Just some sentence to fill up the space. Hello. Just some sentence to fill up the space. Hello.","#fedbd5","d12/12/12"))
-        letterList.add(Letter("draft receiver2","draft sender2","draft HIIIII","#e6f4ff","d22/22/22"))
+        var drafts = ArrayList<Draft>()
+//        letterList.add(Letter("draft receiver","draft sender","draft Just some sentence to fill up the space. Hello. Just some sentence to fill up the space. Hello. Just some sentence to fill up the space. Hello. Just some sentence to fill up the space. Hello. Just some sentence to fill up the space. Hello. Just some sentence to fill up the space. Hello. Just some sentence to fill up the space. Hello.","#fedbd5","d12/12/12"))
+//        letterList.add(Letter("draft receiver2","draft sender2","draft HIIIII","#e6f4ff","d22/22/22"))
 
-        val adapter = DraftsLetterAdaptor(letterList)
+        getDrafts(param1!!) {
+            drafts = it as ArrayList<Draft>
+            val adapter = DraftsLetterAdaptor(drafts)
+            requireActivity().runOnUiThread {
+                recyclerView.adapter = adapter
+                recyclerView.layoutManager = LinearLayoutManager(this.context)
+            }
+        }
+
+        val adapter = DraftsLetterAdaptor(drafts)
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(this.context)
 
