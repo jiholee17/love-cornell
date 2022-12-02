@@ -1,10 +1,12 @@
 package com.example.lovecornellandroid
 
 import android.os.Bundle
+import android.os.CpuUsageInfo
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.fragment.app.FragmentManager
 import com.google.android.material.tabs.TabLayout
 
@@ -43,19 +45,28 @@ class MyLettersFragment : Fragment() {
 
         val tabLayout : TabLayout = view.findViewById(R.id.tabLayout)
 
+        childFragmentManager.beginTransaction()
+            .add(R.id.fragmentContainerView2, DraftsFragment.newInstance(param1 = param1!!))
+            .commit()
+
         tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab) {
+//                var customView = tab.customView
+//                if(customView!=null && customView is TextView){
+//                    customView.setTextColor(view.resources.getColor(R.color.tab_selected))
+//
+//                }
                 when(tab.position) {
                     // Carry out various Fragment transactions (replacing, swapping, etc)
                     // on the fragment container in your activity (see section 6.3)
                     0 -> {
                         childFragmentManager.beginTransaction()
-                            .replace(R.id.fragmentContainerView2, DraftsFragment.newInstance())
+                            .replace(R.id.fragmentContainerView2, DraftsFragment.newInstance(param1 = param1!!))
                             .commit()
                     }
                     1 -> {
                         childFragmentManager.beginTransaction()
-                            .replace(R.id.fragmentContainerView2, SavedFragment.newInstance())
+                            .replace(R.id.fragmentContainerView2, SavedFragment.newInstance(param1 = param1!!))
                             .commit()
                     }
                 }

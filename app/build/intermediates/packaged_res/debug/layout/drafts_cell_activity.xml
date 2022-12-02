@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="0dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_bg">
+                <!--            android:background="@color/white"-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/to_text"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginVertical="10dp"-->
+<!--                    android:layout_marginStart="5dp"-->
+<!--                    android:text="To:"-->
+<!--                    android:textSize="16sp"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                <View-->
+<!--                    android:id="@+id/line_top"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="2dp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:background="#a79182"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/to_text" />-->
+
+<!--                <View-->
+<!--                    android:id="@+id/line_bottom"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="2dp"-->
+<!--                    android:layout_marginBottom="5dp"-->
+<!--                    android:background="#a79182"-->
+<!--                    app:layout_constraintBottom_toTopOf="@+id/from_text" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/content_bg"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_marginStart="2dp"-->
+<!--                    android:layout_marginEnd="2dp"-->
+<!--                    android:background="#6A73E4ED"-->
+<!--                    app:layout_constraintBottom_toTopOf="@+id/line_bottom"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/line_top" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/content_text"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginEnd="10dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:inputType="textLongMessage|textMultiLine"-->
+<!--                    android:lineSpacingExtra="8sp"-->
+<!--                    android:text="Some text text text text text text text text to test multiline. Some text text text text text text text text to test multiline."-->
+<!--                    android:textSize="16sp"-->
+<!--                    app:layout_constraintBottom_toTopOf="@+id/line_bottom"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/line_top" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/from_text"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginVertical="10dp"-->
+<!--                    android:layout_marginStart="5dp"-->
+<!--                    android:layout_marginBottom="3dp"-->
+<!--                    android:text="From:"-->
+<!--                    android:textSize="16sp"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/from_name_text"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:text="Name"-->
+<!--                    android:textSize="16sp"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@+id/from_text"-->
+<!--                    app:layout_constraintStart_toEndOf="@+id/from_text"-->
+<!--                    app:layout_constraintTop_toTopOf="@+id/from_text" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/to_name_text"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:text="Name"-->
+<!--                    android:textSize="16sp"-->
+<!--                    app:layout_constraintStart_toEndOf="@+id/to_text"-->
+<!--                    app:layout_constraintTop_toTopOf="@id/to_text" />-->
+                <TextView
+                    android:id="@+id/to_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/pt_serif_bold_italic"
+                    android:text="To:"
+                    android:textColor="#a79182"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/line_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/darker_gray"
+                    app:layout_constraintBottom_toTopOf="@id/content_bg"
+                    app:layout_constraintTop_toBottomOf="@id/to_name_text" />
+
+                <View
+                    android:id="@+id/line_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#a79182"
+                    app:layout_constraintTop_toBottomOf="@id/content_bg" />
+
+                <TextView
+                    android:id="@+id/content_bg"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="-10dp"
+                    android:background="#6A73E4ED"
+                    app:layout_constraintBottom_toBottomOf="@id/content_text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/content_text" />
+
+                <TextView
+                    android:id="@+id/content_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/pt_serif"
+                    android:inputType="textLongMessage|textMultiLine"
+                    android:lineSpacingExtra="0sp"
+                    android:text="Some text text text text text text text text to test multiline. Some text text text text text text text text to test multiline. Some text text text text text text text text to test multiline. Some text text text text text text text text to test multiline. Some text text text text text text text text to test multiline. Some text text text text text text text text to test multiline."
+                    android:textColor="#a79182"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@id/line_top"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/line_bottom" />
+
+                <TextView
+                    android:id="@+id/from_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/pt_serif_bold_italic"
+                    android:text="From:"
+                    android:textColor="#a79182"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/content_bg" />
+
+                <TextView
+                    android:id="@+id/from_name_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/pt_serif_bold_italic"
+                    android:inputType="textLongMessage|textMultiLine"
+                    android:text="ehllooooooooooooooooooooooooooabcdefghijklmnopqrstuvwxyz"
+                    android:textColor="#a79182"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/from_text"
+                    app:layout_constraintTop_toTopOf="@+id/from_text" />
+
+                <TextView
+                    android:id="@+id/to_name_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/pt_serif_bold_italic"
+                    android:inputType="textLongMessage|textMultiLine"
+                    android:text="HELLOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO"
+                    android:textColor="#a79182"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/to_text"
+                    app:layout_constraintTop_toTopOf="@id/to_text" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/pt_serif_bold"
+            android:text="Edit"
+            android:textColor="#a79182"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/cardView"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+        <ImageButton
+            android:id="@+id/edit_button"
+            android:layout_width="36dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="3dp"
+            android:background="#FFFFFF"
+            app:layout_constraintStart_toEndOf="@+id/edit_text"
+            app:layout_constraintTop_toTopOf="@+id/edit_text"
+            app:srcCompat="@drawable/edit_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

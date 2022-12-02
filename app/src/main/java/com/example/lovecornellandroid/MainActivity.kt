@@ -20,24 +20,33 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val token = intent.extras?.getString("token")
+        Log.d("main token", token!!)
+
         val bottomNav: BottomNavigationView = findViewById(R.id.bottomNavigationView)
+
+        val forumFragment = ForumFragment.newInstance(param1 = token!!)
+        supportFragmentManager.beginTransaction()
+            .add(R.id.fragmentContainerView, forumFragment)
+            .commit()
 
         bottomNav.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.forum_item -> {
-                    val forumFragment = ForumFragment.newInstance()
+                    val forumFragment = ForumFragment.newInstance(param1 = token!!)
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.fragmentContainerView, forumFragment)
                         .commit()
                 }
                 R.id.post_item -> {
-                    val postFragment = PostFragment.newInstance()
+                    val postFragment = PostFragment.newInstance(param1 = token!!)
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.fragmentContainerView, postFragment)
                         .commit()
                 }
                 R.id.letters_item -> {
-                    val myLettersFragment = MyLettersFragment.newInstance()
+                    Log.d("pass token",token.toString())
+                    val myLettersFragment = MyLettersFragment.newInstance(param1 = token!!)
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.fragmentContainerView, myLettersFragment)
                         .commit()

@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -34,7 +36,30 @@ class SavedFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_saved, container, false)
+        val view = inflater.inflate(R.layout.fragment_saved, container, false)
+
+        val recyclerView: RecyclerView = view.findViewById(R.id.recyclerView)
+
+        // TODO: get real dataset from DB
+        var letters = ArrayList<Letter>()
+
+        getSaved(param1!!) {
+            letters = it as ArrayList<Letter>
+            val adapter = SavedLetterAdaptor(letters,param1!!)
+            requireActivity().runOnUiThread {
+                recyclerView.adapter = adapter
+                recyclerView.layoutManager = LinearLayoutManager(this.context)
+            }
+        }
+
+        val adapter = SavedLetterAdaptor(letters,param1!!)
+        requireActivity().runOnUiThread {
+            recyclerView.adapter = adapter
+            recyclerView.layoutManager = LinearLayoutManager(this.context)
+        }
+
+
+        return view
     }
 
     companion object {
