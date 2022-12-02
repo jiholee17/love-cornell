@@ -1,10 +1,13 @@
 package com.example.lovecornellandroid
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -34,7 +37,37 @@ class PostFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_post, container, false)
+        var screen = inflater.inflate(R.layout.fragment_post, container, false)
+
+        var recview = screen.findViewById<RecyclerView>(R.id.color_palate)
+        recview.layoutManager = GridLayoutManager(requireContext(), 4)
+        var myDataset = mutableListOf<dataColor>(
+            dataColor(Color.rgb(0, 204, 0)),
+            dataColor(Color.rgb(0, 204, 102)),
+            dataColor(Color.rgb(0, 204, 204)),
+            dataColor(Color.rgb(0, 102, 204)),
+            dataColor(Color.rgb(0, 0, 204)),
+            dataColor(Color.rgb(102, 0, 204)),
+            dataColor(Color.rgb(127, 0, 205)),
+            dataColor(Color.rgb(204, 0, 204)),
+            dataColor(Color.rgb(153, 51, 205)),
+            dataColor(Color.rgb(204, 0, 0)),
+            dataColor(Color.rgb(255, 0, 0)),
+            dataColor(Color.rgb(255, 51, 51)),
+            dataColor(Color.rgb(255, 255, 51)),
+            dataColor(Color.rgb(51, 255, 51)),
+            dataColor(Color.rgb(102, 255, 102)),
+            dataColor(Color.rgb(102, 255, 255)),
+
+            )
+
+
+
+
+        recview.adapter = recViewColor(myDataset)
+        return screen
+
+
     }
 
     companion object {
@@ -56,4 +89,6 @@ class PostFragment : Fragment() {
                 }
             }
     }
+
+
 }
