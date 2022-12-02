@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.lovecornellandroid.R;
@@ -24,6 +25,9 @@ public final class FragmentForumBinding implements ViewBinding {
   public final ConstraintLayout constraintLayout;
 
   @NonNull
+  public final RecyclerView forumRecyclerview;
+
+  @NonNull
   public final TextView headBg;
 
   @NonNull
@@ -33,10 +37,11 @@ public final class FragmentForumBinding implements ViewBinding {
   public final TextView headText2;
 
   private FragmentForumBinding(@NonNull FrameLayout rootView,
-      @NonNull ConstraintLayout constraintLayout, @NonNull TextView headBg,
-      @NonNull TextView headText, @NonNull TextView headText2) {
+      @NonNull ConstraintLayout constraintLayout, @NonNull RecyclerView forumRecyclerview,
+      @NonNull TextView headBg, @NonNull TextView headText, @NonNull TextView headText2) {
     this.rootView = rootView;
     this.constraintLayout = constraintLayout;
+    this.forumRecyclerview = forumRecyclerview;
     this.headBg = headBg;
     this.headText = headText;
     this.headText2 = headText2;
@@ -75,6 +80,12 @@ public final class FragmentForumBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.forum_recyclerview;
+      RecyclerView forumRecyclerview = ViewBindings.findChildViewById(rootView, id);
+      if (forumRecyclerview == null) {
+        break missingId;
+      }
+
       id = R.id.head_bg;
       TextView headBg = ViewBindings.findChildViewById(rootView, id);
       if (headBg == null) {
@@ -93,8 +104,8 @@ public final class FragmentForumBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentForumBinding((FrameLayout) rootView, constraintLayout, headBg, headText,
-          headText2);
+      return new FragmentForumBinding((FrameLayout) rootView, constraintLayout, forumRecyclerview,
+          headBg, headText, headText2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

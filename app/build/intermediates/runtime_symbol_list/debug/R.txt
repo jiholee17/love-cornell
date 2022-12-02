@@ -73,6 +73,10 @@ int animator nav_default_enter_anim 0x7f02001f
 int animator nav_default_exit_anim 0x7f020020
 int animator nav_default_pop_enter_anim 0x7f020021
 int animator nav_default_pop_exit_anim 0x7f020022
+int array com_google_android_gms_fonts_certs 0x7f140000
+int array com_google_android_gms_fonts_certs_dev 0x7f140001
+int array com_google_android_gms_fonts_certs_prod 0x7f140002
+int array preloaded_fonts 0x7f140003
 int attr SharedValue 0x7f030000
 int attr SharedValueId 0x7f030001
 int attr action 0x7f030002
@@ -1883,6 +1887,7 @@ int color switch_thumb_material_dark 0x7f050259
 int color switch_thumb_material_light 0x7f05025a
 int color switch_thumb_normal_material_dark 0x7f05025b
 int color switch_thumb_normal_material_light 0x7f05025c
+int color tab_selected 0x7f050262
 int color teal_200 0x7f05025d
 int color teal_700 0x7f05025e
 int color tooltip_background_dark 0x7f05025f
@@ -2606,6 +2611,10 @@ int drawable design_ic_visibility 0x7f07007e
 int drawable design_ic_visibility_off 0x7f07007f
 int drawable design_password_eye 0x7f070080
 int drawable design_snackbar_background 0x7f070081
+int drawable edit_button 0x7f0700d9
+int drawable edittext_bg 0x7f0700e3
+int drawable forum__highlighted 0x7f0700da
+int drawable forum_unhighlighted 0x7f0700e1
 int drawable gallery 0x7f070082
 int drawable home 0x7f070083
 int drawable ic_clock_black_24dp 0x7f070084
@@ -2619,6 +2628,7 @@ int drawable ic_mtrl_checked_circle 0x7f07008b
 int drawable ic_mtrl_chip_checked_black 0x7f07008c
 int drawable ic_mtrl_chip_checked_circle 0x7f07008d
 int drawable ic_mtrl_chip_close_circle 0x7f07008e
+int drawable love__cornell_letter 0x7f0700e4
 int drawable m3_appbar_background 0x7f07008f
 int drawable m3_popupmenu_background_overlay 0x7f070090
 int drawable m3_radiobutton_ripple 0x7f070091
@@ -2674,6 +2684,11 @@ int drawable mtrl_switch_thumb_unchecked_pressed 0x7f0700c2
 int drawable mtrl_switch_track 0x7f0700c3
 int drawable mtrl_switch_track_decoration 0x7f0700c4
 int drawable mtrl_tabs_default_indicator 0x7f0700c5
+int drawable my_letters__highlighted 0x7f0700db
+int drawable my_letters__unhighlighted 0x7f0700dd
+int drawable nav_bar_forum_selector 0x7f0700e2
+int drawable nav_bar_myletter_selector 0x7f0700df
+int drawable nav_bar_post_selector 0x7f0700e0
 int drawable navigation_empty_icon 0x7f0700c6
 int drawable notification_action_background 0x7f0700c7
 int drawable notification_bg 0x7f0700c8
@@ -2687,10 +2702,18 @@ int drawable notification_template_icon_bg 0x7f0700cf
 int drawable notification_template_icon_low_bg 0x7f0700d0
 int drawable notification_tile_bg 0x7f0700d1
 int drawable notify_panel_notification_icon_bg 0x7f0700d2
+int drawable post__highlighted 0x7f0700dc
+int drawable post__unhighlighted 0x7f0700de
+int drawable save_button 0x7f0700d7
+int drawable share_button 0x7f0700d8
 int drawable test_level_drawable 0x7f0700d3
 int drawable three_dot 0x7f0700d4
 int drawable tooltip_frame_dark 0x7f0700d5
 int drawable tooltip_frame_light 0x7f0700d6
+int font pt_serif 0x7f150000
+int font pt_serif_bold 0x7f150002
+int font pt_serif_bold_italic 0x7f150001
+int font pt_serif_italic 0x7f150003
 int id ALT 0x7f080000
 int id BOTTOM_END 0x7f080001
 int id BOTTOM_START 0x7f080002
@@ -2897,6 +2920,7 @@ int id flip 0x7f0800ca
 int id floating 0x7f0800cb
 int id forever 0x7f0800cc
 int id forum_item 0x7f0800cd
+int id forum_recyclerview 0x7f080208
 int id fragmentContainerView 0x7f0800ce
 int id fragmentContainerView2 0x7f0800cf
 int id fragment_container_view_tag 0x7f0800d0
@@ -2928,6 +2952,8 @@ int id ifRoom 0x7f0800e9
 int id ignore 0x7f0800ea
 int id ignoreRequest 0x7f0800eb
 int id image 0x7f0800ec
+int id imageView 0x7f08020a
+int id imageView2 0x7f08020b
 int id immediateStop 0x7f0800ed
 int id included 0x7f0800ee
 int id indeterminate 0x7f0800ef
@@ -3095,6 +3121,7 @@ int id search_voice_btn 0x7f080190
 int id select_dialog_listview 0x7f080191
 int id selected 0x7f080192
 int id selection_type 0x7f080193
+int id share_button 0x7f080209
 int id sharedValueSet 0x7f080194
 int id sharedValueUnset 0x7f080195
 int id shortcut 0x7f080196
@@ -3160,6 +3187,11 @@ int id textSpacerNoButtons 0x7f0801d1
 int id textSpacerNoTitle 0x7f0801d2
 int id textStart 0x7f0801d3
 int id textTop 0x7f0801d4
+int id textView 0x7f08020c
+int id textView2 0x7f08020d
+int id textView3 0x7f08020e
+int id textView4 0x7f08020f
+int id textView5 0x7f080210
 int id text_input_end_icon 0x7f0801d5
 int id text_input_error_icon 0x7f0801d6
 int id text_input_start_icon 0x7f0801d7
@@ -3354,6 +3386,7 @@ int layout design_text_input_end_icon 0x7f0b002c
 int layout design_text_input_start_icon 0x7f0b002d
 int layout drafts_cell_activity 0x7f0b002e
 int layout entry_activity 0x7f0b002f
+int layout forum_cell_activity 0x7f0b0072
 int layout fragment_drafts 0x7f0b0030
 int layout fragment_forum 0x7f0b0031
 int layout fragment_my_letters 0x7f0b0032

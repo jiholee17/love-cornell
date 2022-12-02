@@ -8,22 +8,45 @@
 
     <EditText
         android:id="@+id/email_text"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edittext_bg"
+        android:backgroundTintMode="multiply"
         android:ems="10"
+        android:fontFamily="@font/pt_serif"
+        android:hint="Email"
         android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="#a79182"
+        android:textColorHint="#a79182"
+        android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/password_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/password_text"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edittext_bg"
         android:ems="10"
-        android:inputType="textPassword"
+        android:fontFamily="@font/pt_serif"
+        android:hint="Password"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="#a79182"
+        android:textColorHint="#a79182"
+        android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/switch_login_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
@@ -31,10 +54,14 @@
 
     <Button
         android:id="@+id/login_activity_button"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="200dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#D2B5A0"
+        android:capitalize="none"
+        android:fontFamily="@font/pt_serif_bold"
         android:text="Log in"
+        android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -44,9 +71,35 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
+        android:fontFamily="@font/pt_serif"
+        android:textColor="#a79182"
+        android:textColorLink="#a79182"
         android:text="Already have an account? Log in."
         app:layout_constraintBottom_toTopOf="@+id/login_activity_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/love__cornell_letter" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/pt_serif_bold"
+        android:text="Sign up"
+        android:textColor="#a79182"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

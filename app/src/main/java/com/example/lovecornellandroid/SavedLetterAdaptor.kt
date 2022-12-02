@@ -1,6 +1,7 @@
 package com.example.lovecornellandroid
 
 import android.graphics.Color
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,7 +10,7 @@ import androidx.appcompat.widget.AppCompatImageButton
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 
-class SavedLetterAdaptor(private val dataSet: List<Letter>) :
+class SavedLetterAdaptor(private val dataSet: List<Letter>, val token : String) :
     RecyclerView.Adapter<SavedLetterAdaptor.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -30,14 +31,26 @@ class SavedLetterAdaptor(private val dataSet: List<Letter>) :
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 //        holder.contentBg.setBackgroundColor(Color.parseColor(dataSet[position].color))
+        val id = dataSet[position].id
         holder.toText.text = dataSet[position].receiver
         holder.contentText.text = dataSet[position].content
         holder.timeText.text = dataSet[position].timestamp
         holder.fromText.text = dataSet[position].sender
-        holder.contentBg.setBackgroundColor(Color.parseColor(dataSet[position].color))
+        var colorText = dataSet[position].color
+        if(colorText[0]!='#'){
+            colorText = "#$colorText"
+        }
+        var saved = true
+        holder.contentBg.setBackgroundColor(Color.parseColor(colorText))
 
         holder.button.setOnClickListener {
-            // TODO: unsave this letter
+            saved = !saved
+            Log.d("saved?",saved.toString())
+            if(saved){
+                saveLetter(id,token){}
+            }else{
+                unsaveLetter(id,token){}
+            }
         }
     }
 

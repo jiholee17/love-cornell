@@ -31,7 +31,11 @@ class DraftsLetterAdaptor(private val dataSet: ArrayList<Draft>) :
         holder.toText.text = dataSet[position].receiver
         holder.contentText.text = dataSet[position].content
         holder.fromText.text = dataSet[position].sender
-        holder.contentBg.setBackgroundColor(Color.parseColor(dataSet[position].color))
+        var colorText = dataSet[position].color
+        if(colorText[0]!='#'){
+            colorText = "#$colorText"
+        }
+        holder.contentBg.setBackgroundColor(Color.parseColor(colorText))
 
 
 //        var intentLauncher: ActivityResultLauncher<Intent>

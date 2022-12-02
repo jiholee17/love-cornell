@@ -6,19 +6,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:enabled="true"
-        android:icon="@drawable/home"
+        android:icon="@drawable/nav_bar_forum_selector"
         android:title="@string/forum_item"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/post_item"
         android:enabled="true"
-        android:icon="@drawable/gallery"
+        android:icon="@drawable/nav_bar_post_selector"
         android:title="@string/post_item"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/letters_item"
         android:enabled="true"
-        android:icon="@drawable/three_dot"
+        android:icon="@drawable/nav_bar_myletter_selector"
         android:title="@string/letters_item"
         app:showAsAction="ifRoom" />
 

@@ -74,6 +74,10 @@ animator nav_default_enter_anim
 animator nav_default_exit_anim
 animator nav_default_pop_enter_anim
 animator nav_default_pop_exit_anim
+array com_google_android_gms_fonts_certs
+array com_google_android_gms_fonts_certs_dev
+array com_google_android_gms_fonts_certs_prod
+array preloaded_fonts
 attr SharedValue
 attr SharedValueId
 attr action
@@ -1884,6 +1888,7 @@ color switch_thumb_material_dark
 color switch_thumb_material_light
 color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
+color tab_selected
 color teal_200
 color teal_700
 color tooltip_background_dark
@@ -2607,6 +2612,10 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable edit_button
+drawable edittext_bg
+drawable forum__highlighted
+drawable forum_unhighlighted
 drawable gallery
 drawable home
 drawable ic_clock_black_24dp
@@ -2620,6 +2629,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable love__cornell_letter
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
 drawable m3_radiobutton_ripple
@@ -2675,6 +2685,11 @@ drawable mtrl_switch_thumb_unchecked_pressed
 drawable mtrl_switch_track
 drawable mtrl_switch_track_decoration
 drawable mtrl_tabs_default_indicator
+drawable my_letters__highlighted
+drawable my_letters__unhighlighted
+drawable nav_bar_forum_selector
+drawable nav_bar_myletter_selector
+drawable nav_bar_post_selector
 drawable navigation_empty_icon
 drawable notification_action_background
 drawable notification_bg
@@ -2688,10 +2703,18 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable post__highlighted
+drawable post__unhighlighted
+drawable save_button
+drawable share_button
 drawable test_level_drawable
 drawable three_dot
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font pt_serif
+font pt_serif_bold
+font pt_serif_bold_italic
+font pt_serif_italic
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -2898,6 +2921,7 @@ id flip
 id floating
 id forever
 id forum_item
+id forum_recyclerview
 id fragmentContainerView
 id fragmentContainerView2
 id fragment_container_view_tag
@@ -2929,6 +2953,8 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
+id imageView2
 id immediateStop
 id included
 id indeterminate
@@ -3096,6 +3122,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id share_button
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3161,6 +3188,11 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
+id textView2
+id textView3
+id textView4
+id textView5
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3355,6 +3387,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout drafts_cell_activity
 layout entry_activity
+layout forum_cell_activity
 layout fragment_drafts
 layout fragment_forum
 layout fragment_my_letters

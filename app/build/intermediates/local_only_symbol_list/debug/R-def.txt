@@ -1,9 +1,14 @@
 R_DEF: Internal format may change without notice
 local
+array com_google_android_gms_fonts_certs
+array com_google_android_gms_fonts_certs_dev
+array com_google_android_gms_fonts_certs_prod
+array preloaded_fonts
 color black
 color purple_200
 color purple_500
 color purple_700
+color tab_selected
 color teal_200
 color teal_700
 color white
@@ -11,11 +16,29 @@ dimen activity_horizontal_margin
 dimen activity_vertical_margin
 dimen fab_margin
 drawable border_bg
+drawable edit_button
+drawable edittext_bg
+drawable forum__highlighted
+drawable forum_unhighlighted
 drawable gallery
 drawable home
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable love__cornell_letter
+drawable my_letters__highlighted
+drawable my_letters__unhighlighted
+drawable nav_bar_forum_selector
+drawable nav_bar_myletter_selector
+drawable nav_bar_post_selector
+drawable post__highlighted
+drawable post__unhighlighted
+drawable save_button
+drawable share_button
 drawable three_dot
+font pt_serif
+font pt_serif_bold
+font pt_serif_bold_italic
+font pt_serif_italic
 id bottomNavigationView
 id cardView
 id constraintLayout
@@ -27,6 +50,7 @@ id edit_button
 id edit_text
 id email_text
 id forum_item
+id forum_recyclerview
 id fragmentContainerView
 id fragmentContainerView2
 id from_name_text
@@ -34,6 +58,8 @@ id from_text
 id head_bg
 id head_text
 id head_text2
+id imageView
+id imageView2
 id layout
 id letters_item
 id line_bottom
@@ -46,10 +72,16 @@ id post_item
 id recyclerView
 id save_button
 id saved
+id share_button
 id signup_button
 id switch_login_text
 id switch_signup_text
 id tabLayout
+id textView
+id textView2
+id textView3
+id textView4
+id textView5
 id time_text
 id to_name_text
 id to_text
@@ -57,6 +89,7 @@ layout activity_main
 layout basic_cell_activity
 layout drafts_cell_activity
 layout entry_activity
+layout forum_cell_activity
 layout fragment_drafts
 layout fragment_forum
 layout fragment_my_letters

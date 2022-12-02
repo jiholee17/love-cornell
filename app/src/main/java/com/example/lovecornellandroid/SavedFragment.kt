@@ -41,13 +41,23 @@ class SavedFragment : Fragment() {
         val recyclerView: RecyclerView = view.findViewById(R.id.recyclerView)
 
         // TODO: get real dataset from DB
-        val letterList = ArrayList<Letter>()
-//        letterList.add(Letter("receiver","sender","Just some sentence to fill up the space. Hello. Just some sentence to fill up the space. Hello. Just some sentence to fill up the space. Hello. Just some sentence to fill up the space. Hello. Just some sentence to fill up the space. Hello. Just some sentence to fill up the space. Hello. Just some sentence to fill up the space. Hello.","#fefbdc","12/12/12"))
-//        letterList.add(Letter("receiver2","sender2","HIIIII","#ffd7b3","22/22/22"))
+        var letters = ArrayList<Letter>()
 
-        val adapter = SavedLetterAdaptor(letterList)
-        recyclerView.adapter = adapter
-        recyclerView.layoutManager = LinearLayoutManager(this.context)
+        getSaved(param1!!) {
+            letters = it as ArrayList<Letter>
+            val adapter = SavedLetterAdaptor(letters,param1!!)
+            requireActivity().runOnUiThread {
+                recyclerView.adapter = adapter
+                recyclerView.layoutManager = LinearLayoutManager(this.context)
+            }
+        }
+
+        val adapter = SavedLetterAdaptor(letters,param1!!)
+        requireActivity().runOnUiThread {
+            recyclerView.adapter = adapter
+            recyclerView.layoutManager = LinearLayoutManager(this.context)
+        }
+
 
         return view
     }

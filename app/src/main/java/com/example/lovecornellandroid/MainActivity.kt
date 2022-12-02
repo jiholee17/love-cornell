@@ -25,6 +25,11 @@ class MainActivity : AppCompatActivity() {
 
         val bottomNav: BottomNavigationView = findViewById(R.id.bottomNavigationView)
 
+        val forumFragment = ForumFragment.newInstance(param1 = token!!)
+        supportFragmentManager.beginTransaction()
+            .add(R.id.fragmentContainerView, forumFragment)
+            .commit()
+
         bottomNav.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.forum_item -> {
