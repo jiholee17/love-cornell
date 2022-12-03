@@ -1,10 +1,13 @@
 package com.example.lovecornellandroid
 
+import android.graphics.Color
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -49,6 +52,18 @@ class DraftsFragment : Fragment() {
         getDrafts(param1!!) {
             drafts = it as ArrayList<Draft>
             val adapter = DraftsLetterAdaptor(drafts)
+
+            class child : DraftsLetterAdaptor.OnItemClickListener {
+                override fun onItemClick(to: String, from : String, id : String, content : String, color : String) {
+                    // TODO
+                    val m = view.context as MainActivity
+                    m.supportFragmentManager.beginTransaction()
+                        .add(R.id.fragmentContainerView, PostFragment.newInstance(param1!!,to,from,content,color,id))
+                        .commit()
+                }
+
+            }
+            adapter.setOnItemClickListener(child())
             requireActivity().runOnUiThread {
                 recyclerView.adapter = adapter
                 recyclerView.layoutManager = LinearLayoutManager(this.context)
@@ -56,6 +71,27 @@ class DraftsFragment : Fragment() {
         }
 
         val adapter = DraftsLetterAdaptor(drafts)
+
+        val fg = this
+
+        class child : DraftsLetterAdaptor.OnItemClickListener {
+            override fun onItemClick(to: String, from : String, id : String, content : String, color : String) {
+                // TODO
+
+                val m = view.context as MainActivity
+                m.supportFragmentManager.beginTransaction()
+                    .hide(fg)
+                    .commit()
+
+                m.supportFragmentManager.beginTransaction()
+                    .replace(R.id.fragmentContainerView, PostFragment.newInstance(param1!!,to,from,content,color,id))
+                    .commit()
+
+            }
+
+        }
+        adapter.setOnItemClickListener(child())
+
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(this.context)
 

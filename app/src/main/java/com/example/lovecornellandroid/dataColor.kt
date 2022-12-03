@@ -1,4 +1,6 @@
 package com.example.lovecornellandroid
 
 
-data class dataColor(val color_val: Int)
+data class dataColor(
+    val color: String
+    )

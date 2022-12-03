@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:2:1-69:12
-INJECTED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:2:1-69:12
-INJECTED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:2:1-69:12
-INJECTED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:2:1-69:12
+ADDED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:2:1-78:12
+INJECTED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:2:1-78:12
+INJECTED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:2:1-78:12
+INJECTED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:2:1-78:12
 MERGED from [androidx.databinding:viewbinding:7.3.1] C:\Users\zhoux\.gradle\caches\transforms-3\c16f5e529333fb99c2aff8bb96a0d235\transformed\viewbinding-7.3.1\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.5.3] C:\Users\zhoux\.gradle\caches\transforms-3\f892d77d61bc7728ff9aa59943d891d4\transformed\navigation-fragment-ktx-2.5.3\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-fragment:2.5.3] C:\Users\zhoux\.gradle\caches\transforms-3\aca35061b9cc6f022f377619122c29c4\transformed\navigation-fragment-2.5.3\AndroidManifest.xml:17:1-24:12
@@ -24,6 +24,8 @@ MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\zhoux\.gradle\caches
 MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\zhoux\.gradle\caches\transforms-3\f4e8c752aa58e883914bac4502d8ce05\transformed\fragment-1.5.4\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.5.1] C:\Users\zhoux\.gradle\caches\transforms-3\452faa790de09d58da6b284d50d9ef16\transformed\activity-1.5.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\385e466706e73bb3d73bbe6b4875519d\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.gridlayout:gridlayout:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\1c25d083da3b647e2b87c68f4d2280c4\transformed\gridlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\b150cc6d31de68c179249e1545829226\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\74dede7469dde4ebb849523538d1356b\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\5ce07e52a7d4e86d32024963e64ae55f\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\zhoux\.gradle\caches\transforms-3\f2489d9065f4dca5ca4b308de42fbf04\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:17:1-24:12
@@ -39,9 +41,11 @@ MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\zhoux\.gradle\ca
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\zhoux\.gradle\caches\transforms-3\e5a7f5c955953cc9d13feeef1215b998\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\zhoux\.gradle\caches\transforms-3\f64967c674a30b5964ec360f3fe1fd1e\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\zhoux\.gradle\caches\transforms-3\1cbb9568b0ad18efcfa640a8dc80d6d7\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\zhoux\.gradle\caches\transforms-3\bebc84e5611febee61e63b319d718ccf\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\aa8ac483add921dafa22eb66b84f2064\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\zhoux\.gradle\caches\transforms-3\bebc84e5611febee61e63b319d718ccf\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\zhoux\.gradle\caches\transforms-3\164e3c0afb92a7e3b5c15f9935adbebd\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\5c900fcb881e5fed8f57022a143fb152\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\3d907538bae912019a060cf94f15557f\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.transition:transition:1.4.1] C:\Users\zhoux\.gradle\caches\transforms-3\8fd69d7879fcc60c4adfacc4279ac29a\transformed\transition-1.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core:1.8.0] C:\Users\zhoux\.gradle\caches\transforms-3\205feb206244c8c1b4b56fcdc8d69988\transformed\core-1.8.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\d61520087bb53d23a4e3afad5636d15d\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -62,22 +66,22 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\zhoux\.gradle\ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\eb096476208bed94cd51cc904aa804e3\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\87b6f924c6c766718f595823a69da52a\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\zhoux\.gradle\caches\transforms-3\fb44608a9e1d20332c6690b5dda0b67e\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:2:1-69:12
-INJECTED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:2:1-69:12
-INJECTED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:2:1-69:12
+INJECTED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:2:1-78:12
+INJECTED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:2:1-78:12
+INJECTED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:2:1-78:12
 	package
 		INJECTED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:2:1-69:12
+		ADDED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:2:1-78:12
 		INJECTED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:2:1-69:12
+		ADDED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:2:1-78:12
 		INJECTED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:2:1-69:12
+		ADDED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:2:1-78:12
 		INJECTED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:2:11-69
@@ -90,7 +94,7 @@ ADDED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\
 	android:name
 		ADDED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:6:22-76
 application
-ADDED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:8:5-67:19
+ADDED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:8:5-76:19
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\zhoux\.gradle\caches\transforms-3\53edefe15d403f8467620aa121e38059\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\zhoux\.gradle\caches\transforms-3\53edefe15d403f8467620aa121e38059\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\zhoux\.gradle\caches\transforms-3\38043517c514ada7a9c17da61d45b16b\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -181,12 +185,20 @@ ADDED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\
 		ADDED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:56:13-72
 	android:name
 		ADDED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:53:13-41
-meta-data#preloaded_fonts
-ADDED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:64:9-66:57
-	android:resource
-		ADDED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:66:13-54
+activity#com.example.lovecornellandroid.PostFragment
+ADDED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:64:9-71:20
+	android:exported
+		ADDED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:66:13-37
+	android:theme
+		ADDED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:67:13-72
 	android:name
-		ADDED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:65:13-43
+		ADDED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:65:13-41
+meta-data#preloaded_fonts
+ADDED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:73:9-75:57
+	android:resource
+		ADDED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:75:13-54
+	android:name
+		ADDED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:74:13-43
 uses-sdk
 INJECTED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml
@@ -231,6 +243,10 @@ MERGED from [androidx.activity:activity:1.5.1] C:\Users\zhoux\.gradle\caches\tra
 MERGED from [androidx.activity:activity:1.5.1] C:\Users\zhoux\.gradle\caches\transforms-3\452faa790de09d58da6b284d50d9ef16\transformed\activity-1.5.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\385e466706e73bb3d73bbe6b4875519d\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\385e466706e73bb3d73bbe6b4875519d\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.gridlayout:gridlayout:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\1c25d083da3b647e2b87c68f4d2280c4\transformed\gridlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.gridlayout:gridlayout:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\1c25d083da3b647e2b87c68f4d2280c4\transformed\gridlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\b150cc6d31de68c179249e1545829226\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\b150cc6d31de68c179249e1545829226\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\74dede7469dde4ebb849523538d1356b\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\74dede7469dde4ebb849523538d1356b\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\5ce07e52a7d4e86d32024963e64ae55f\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
@@ -261,12 +277,16 @@ MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\zho
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\zhoux\.gradle\caches\transforms-3\f64967c674a30b5964ec360f3fe1fd1e\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\zhoux\.gradle\caches\transforms-3\1cbb9568b0ad18efcfa640a8dc80d6d7\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\zhoux\.gradle\caches\transforms-3\1cbb9568b0ad18efcfa640a8dc80d6d7\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\zhoux\.gradle\caches\transforms-3\bebc84e5611febee61e63b319d718ccf\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\zhoux\.gradle\caches\transforms-3\bebc84e5611febee61e63b319d718ccf\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\aa8ac483add921dafa22eb66b84f2064\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\aa8ac483add921dafa22eb66b84f2064\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\zhoux\.gradle\caches\transforms-3\bebc84e5611febee61e63b319d718ccf\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\zhoux\.gradle\caches\transforms-3\bebc84e5611febee61e63b319d718ccf\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\zhoux\.gradle\caches\transforms-3\164e3c0afb92a7e3b5c15f9935adbebd\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\zhoux\.gradle\caches\transforms-3\164e3c0afb92a7e3b5c15f9935adbebd\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\5c900fcb881e5fed8f57022a143fb152\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\5c900fcb881e5fed8f57022a143fb152\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\3d907538bae912019a060cf94f15557f\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\3d907538bae912019a060cf94f15557f\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.transition:transition:1.4.1] C:\Users\zhoux\.gradle\caches\transforms-3\8fd69d7879fcc60c4adfacc4279ac29a\transformed\transition-1.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.transition:transition:1.4.1] C:\Users\zhoux\.gradle\caches\transforms-3\8fd69d7879fcc60c4adfacc4279ac29a\transformed\transition-1.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.8.0] C:\Users\zhoux\.gradle\caches\transforms-3\205feb206244c8c1b4b56fcdc8d69988\transformed\core-1.8.0\AndroidManifest.xml:20:5-22:41

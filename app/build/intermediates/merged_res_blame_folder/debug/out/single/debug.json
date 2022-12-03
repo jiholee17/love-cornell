@@ -1,214 +1,226 @@
 [
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\drawable-v24_home.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\drawable-v24\\home.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\drawable_save_button.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\drawable\\save_button.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\drawable_trash_button.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\drawable\\trash_button.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\menu_my_menu.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\menu\\my_menu.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\drawable-v24_gallery.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\drawable-v24\\gallery.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\layout_basic_cell_activity.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\layout\\basic_cell_activity.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\drawable_my_letters__unhighlighted.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\drawable\\my_letters__unhighlighted.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\layout_forum_cell_activity.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\layout\\forum_cell_activity.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\drawable_post__highlighted.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\drawable\\post__highlighted.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\font_pt_serif_italic.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\font\\pt_serif_italic.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\drawable-v24_three_dot.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\drawable-v24\\three_dot.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\drawable-v24_three_dot.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\drawable-v24\\three_dot.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\layout_signup_activity.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\layout\\signup_activity.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\drawable_forum_unhighlighted.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\drawable\\forum_unhighlighted.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\layout_entry_activity.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\layout\\entry_activity.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\drawable_my_letters__highlighted.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\drawable\\my_letters__highlighted.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\drawable_share_button.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\drawable\\share_button.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\drawable_forum__highlighted.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\drawable\\forum__highlighted.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\drawable_border_bg.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\drawable\\border_bg.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\layout_fragment_my_letters.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\layout\\fragment_my_letters.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\drawable_edit_button.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\drawable\\edit_button.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\font_pt_serif_bold.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\font\\pt_serif_bold.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\drawable_nav_bar_myletter_selector.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\drawable\\nav_bar_myletter_selector.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\layout_saved_cell_activity.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\layout\\saved_cell_activity.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\layout_fragment_post.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\layout\\fragment_post.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\font_pt_serif.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\font\\pt_serif.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\drawable_nav_bar_forum_selector.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\drawable\\nav_bar_forum_selector.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "com.example.lovecornellandroid.app-merged_res-48:/layout_fragment_post.xml.flat",
+        "source": "com.example.lovecornellandroid.app-main-50:/layout/fragment_post.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\layout_fragment_post.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\layout\\fragment_post.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\drawable-v24_home.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\drawable-v24\\home.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\drawable_nav_bar_post_selector.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\drawable\\nav_bar_post_selector.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.lovecornellandroid.app-merged_res-47:/layout_entry_activity.xml.flat",
-        "source": "com.example.lovecornellandroid.app-main-49:/layout/entry_activity.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\drawable_my_letters__unhighlighted.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\drawable\\my_letters__unhighlighted.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-pngs-43:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\drawable_nav_bar_post_selector.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\drawable\\nav_bar_post_selector.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-pngs-42:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\layout_signup_activity.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\layout\\signup_activity.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\drawable_post__highlighted.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\drawable\\post__highlighted.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\layout_fragment_drafts.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\layout\\fragment_drafts.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\layout_login_acitivity.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\layout\\login_acitivity.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\drawable_border_bg.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\drawable\\border_bg.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\font_pt_serif_italic.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\font\\pt_serif_italic.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\drawable_post__unhighlighted.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\drawable\\post__unhighlighted.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\layout_fragment_saved.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\layout\\fragment_saved.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\font_pt_serif.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\font\\pt_serif.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\xml\\data_extraction_rules.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\layout_forum_cell_activity.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\layout\\forum_cell_activity.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\layout_fragment_saved.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\layout\\fragment_saved.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\drawable_forum__highlighted.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\drawable\\forum__highlighted.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\layout_basic_cell_activity.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\layout\\basic_cell_activity.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\xml\\backup_rules.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\layout_login_acitivity.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\layout\\login_acitivity.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\layout_fragment_forum.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\layout\\fragment_forum.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\menu_my_menu.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\menu\\my_menu.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\drawable-v24_gallery.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\drawable-v24\\gallery.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\layout_color_cube.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\layout\\color_cube.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\drawable_edittext_bg.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\drawable\\edittext_bg.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\layout_fragment_forum.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\layout\\fragment_forum.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\drawable_nav_bar_myletter_selector.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\drawable\\nav_bar_myletter_selector.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\drawable_colorcube_selector.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\drawable\\colorcube_selector.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\drawable_love__cornell_letter.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\drawable\\love__cornell_letter.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\drawable_love__cornell_letter.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\drawable\\love__cornell_letter.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\drawable_post__unhighlighted.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\drawable\\post__unhighlighted.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\drawable_edittext_bg.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\drawable\\edittext_bg.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\layout_fragment_my_letters.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\layout\\fragment_my_letters.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\layout_entry_activity.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\layout\\entry_activity.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\drawable_nav_bar_forum_selector.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\drawable\\nav_bar_forum_selector.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\font_pt_serif_bold_italic.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\font\\pt_serif_bold_italic.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\font_pt_serif_bold_italic.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\font\\pt_serif_bold_italic.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\drawable_share_button.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\drawable\\share_button.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\layout_drafts_cell_activity.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\layout\\drafts_cell_activity.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\drawable_forum_unhighlighted.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\drawable\\forum_unhighlighted.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\layout_saved_cell_activity.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\layout\\saved_cell_activity.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\drawable_my_letters__highlighted.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\drawable\\my_letters__highlighted.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\font_pt_serif_bold.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\font\\pt_serif_bold.xml"
     },
     {
-        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-47:\\layout_fragment_drafts.xml.flat",
-        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-49:\\layout\\fragment_drafts.xml"
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\drawable_edit_button.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\drawable\\edit_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\drawable_save_button.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\drawable\\save_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-merged_res-48:\\layout_drafts_cell_activity.xml.flat",
+        "source": "C:\\Users\\zhoux\\.gradle\\daemon\\7.4\\com.example.lovecornellandroid.app-main-50:\\layout\\drafts_cell_activity.xml"
     }
 ]

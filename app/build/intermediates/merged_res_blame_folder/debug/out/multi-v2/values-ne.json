@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.lovecornellandroid.app-mergeDebugResources-45:/values-ne/values-ne.xml",
+            "outputFile": "com.example.lovecornellandroid.app-mergeDebugResources-46:/values-ne/values-ne.xml",
             "map": [
                 {
                     "source": "C:\\Users\\zhoux\\.gradle\\caches\\transforms-3\\19a531f90efcc9e9cd8b0bca09ee9f81\\transformed\\navigation-ui-2.5.3\\res\\values-ne\\values-ne.xml",

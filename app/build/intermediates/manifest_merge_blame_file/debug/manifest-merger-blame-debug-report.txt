@@ -18,7 +18,7 @@
 12-->C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:6:22-76
 13
 14    <application
-14-->C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:8:5-67:19
+14-->C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:8:5-76:19
 15        android:allowBackup="true"
 15-->C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:9:9-35
 16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -116,48 +116,63 @@
 65                android:value="" />
 65-->C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:25:17-33
 66        </activity>
-67
-68        <meta-data
-68-->C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:64:9-66:57
-69            android:name="preloaded_fonts"
-69-->C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:65:13-43
-70            android:resource="@array/preloaded_fonts" />
-70-->C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:66:13-54
-71
-72        <uses-library
-72-->[androidx.window:window:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\e65b8465f5bac02dec998c398cfe1021\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-73            android:name="androidx.window.extensions"
-73-->[androidx.window:window:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\e65b8465f5bac02dec998c398cfe1021\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-74            android:required="false" />
-74-->[androidx.window:window:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\e65b8465f5bac02dec998c398cfe1021\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-75        <uses-library
-75-->[androidx.window:window:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\e65b8465f5bac02dec998c398cfe1021\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-76            android:name="androidx.window.sidecar"
-76-->[androidx.window:window:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\e65b8465f5bac02dec998c398cfe1021\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-77            android:required="false" />
-77-->[androidx.window:window:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\e65b8465f5bac02dec998c398cfe1021\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-78
-79        <provider
-79-->[androidx.emoji2:emoji2:1.2.0] C:\Users\zhoux\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-80            android:name="androidx.startup.InitializationProvider"
-80-->[androidx.emoji2:emoji2:1.2.0] C:\Users\zhoux\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-81            android:authorities="com.example.lovecornellandroid.androidx-startup"
-81-->[androidx.emoji2:emoji2:1.2.0] C:\Users\zhoux\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-82            android:exported="false" >
-82-->[androidx.emoji2:emoji2:1.2.0] C:\Users\zhoux\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-83            <meta-data
-83-->[androidx.emoji2:emoji2:1.2.0] C:\Users\zhoux\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-84                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-84-->[androidx.emoji2:emoji2:1.2.0] C:\Users\zhoux\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-85                android:value="androidx.startup" />
-85-->[androidx.emoji2:emoji2:1.2.0] C:\Users\zhoux\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-86            <meta-data
-86-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\zhoux\.gradle\caches\transforms-3\a8199b6bb025d711471524267dd78014\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-87                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-87-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\zhoux\.gradle\caches\transforms-3\a8199b6bb025d711471524267dd78014\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-88                android:value="androidx.startup" />
-88-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\zhoux\.gradle\caches\transforms-3\a8199b6bb025d711471524267dd78014\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-89        </provider>
-90    </application>
-91
-92</manifest>
+67        <activity
+67-->C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:64:9-71:20
+68            android:name="com.example.lovecornellandroid.PostFragment"
+68-->C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:65:13-41
+69            android:exported="false"
+69-->C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:66:13-37
+70            android:theme="@style/Theme.LoveCornellAndroid.NoActionBar" >
+70-->C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:67:13-72
+71            <meta-data
+71-->C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:23:13-25:36
+72                android:name="android.app.lib_name"
+72-->C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:24:17-52
+73                android:value="" />
+73-->C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:25:17-33
+74        </activity>
+75
+76        <meta-data
+76-->C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:73:9-75:57
+77            android:name="preloaded_fonts"
+77-->C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:74:13-43
+78            android:resource="@array/preloaded_fonts" />
+78-->C:\Users\zhoux\Desktop\Cornell\CS1998_Android\Hackathon\love-cornell\app\src\main\AndroidManifest.xml:75:13-54
+79
+80        <uses-library
+80-->[androidx.window:window:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\e65b8465f5bac02dec998c398cfe1021\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+81            android:name="androidx.window.extensions"
+81-->[androidx.window:window:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\e65b8465f5bac02dec998c398cfe1021\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+82            android:required="false" />
+82-->[androidx.window:window:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\e65b8465f5bac02dec998c398cfe1021\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+83        <uses-library
+83-->[androidx.window:window:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\e65b8465f5bac02dec998c398cfe1021\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+84            android:name="androidx.window.sidecar"
+84-->[androidx.window:window:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\e65b8465f5bac02dec998c398cfe1021\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+85            android:required="false" />
+85-->[androidx.window:window:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\e65b8465f5bac02dec998c398cfe1021\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+86
+87        <provider
+87-->[androidx.emoji2:emoji2:1.2.0] C:\Users\zhoux\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+88            android:name="androidx.startup.InitializationProvider"
+88-->[androidx.emoji2:emoji2:1.2.0] C:\Users\zhoux\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+89            android:authorities="com.example.lovecornellandroid.androidx-startup"
+89-->[androidx.emoji2:emoji2:1.2.0] C:\Users\zhoux\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+90            android:exported="false" >
+90-->[androidx.emoji2:emoji2:1.2.0] C:\Users\zhoux\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+91            <meta-data
+91-->[androidx.emoji2:emoji2:1.2.0] C:\Users\zhoux\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+92                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+92-->[androidx.emoji2:emoji2:1.2.0] C:\Users\zhoux\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+93                android:value="androidx.startup" />
+93-->[androidx.emoji2:emoji2:1.2.0] C:\Users\zhoux\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+94            <meta-data
+94-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\zhoux\.gradle\caches\transforms-3\a8199b6bb025d711471524267dd78014\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+95                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+95-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\zhoux\.gradle\caches\transforms-3\a8199b6bb025d711471524267dd78014\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+96                android:value="androidx.startup" />
+96-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\zhoux\.gradle\caches\transforms-3\a8199b6bb025d711471524267dd78014\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+97        </provider>
+98    </application>
+99
+100</manifest>

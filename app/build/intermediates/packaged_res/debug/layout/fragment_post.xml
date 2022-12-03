@@ -1,64 +1,320 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PostFragment">
+    android:background="#ffffff">
 
     <!-- TODO: Update blank fragment layout -->
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/head_bg"-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="70dp"-->
+    <!--            android:background="#ECE0D0"-->
+    <!--            app:layout_constraintBottom_toTopOf="@id/constraint_layout"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/head_text2"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginBottom="5dp"-->
+    <!--            android:fontFamily="@font/pt_serif_italic"-->
+    <!--            android:text="Let someone know you're thinking of them"-->
+    <!--            app:layout_constraintBottom_toBottomOf="@+id/head_bg"-->
+    <!--            app:layout_constraintEnd_toEndOf="@+id/head_bg"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/head_text" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/head_text"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:fontFamily="@font/pt_serif_bold"-->
+    <!--            android:text="POST"-->
+    <!--            android:textSize="24sp"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="@+id/head_bg"-->
+    <!--            app:layout_constraintTop_toTopOf="@+id/head_bg" />-->
+
+    <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--            android:id="@+id/constraint_layout"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@id/head_bg">-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:text="POST" />-->
+    <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".PostFragment">
 
-        <TextView
-            android:id="@+id/head_bg"
-            android:layout_width="0dp"
-            android:layout_height="70dp"
-            android:background="#ECE0D0"
-            app:layout_constraintBottom_toTopOf="@id/constraint_layout"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/head_text2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:fontFamily="@font/pt_serif_italic"
-            android:text="Let someone know you're thinking of them"
-            app:layout_constraintBottom_toBottomOf="@+id/head_bg"
-            app:layout_constraintEnd_toEndOf="@+id/head_bg"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/head_text" />
-
-        <TextView
-            android:id="@+id/head_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/pt_serif_bold"
-            android:text="POST"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/head_bg"
-            app:layout_constraintTop_toTopOf="@+id/head_bg" />
+        <!-- TODO: Update blank fragment layout -->
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraint_layout"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/head_bg">
+            android:layout_height="match_parent">
 
-            <TextView
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="POST" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-</FrameLayout>
+                <TextView
+                    android:id="@+id/head_bg"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:background="#ECE0D0"
+                    app:layout_constraintBottom_toTopOf="@id/constraint_layout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/head_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/pt_serif_italic"
+                    android:text="Let someone know you're thinking of them"
+                    app:layout_constraintBottom_toBottomOf="@+id/head_bg"
+                    app:layout_constraintEnd_toEndOf="@+id/head_bg"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/head_text" />
+
+                <TextView
+                    android:id="@+id/head_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/pt_serif_bold"
+                    android:text="POST"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/head_bg"
+                    app:layout_constraintTop_toTopOf="@+id/head_bg" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/border_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/constraintLayout2">
+                <!--            android:background="@color/white"-->
+
+
+                <TextView
+                    android:id="@+id/to_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/pt_serif_bold_italic"
+                    android:text="To:"
+                    android:textColor="#a79182"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/line_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/darker_gray"
+                    app:layout_constraintBottom_toTopOf="@id/content_bg"
+                    app:layout_constraintTop_toBottomOf="@id/to_name_text" />
+
+                <View
+                    android:id="@+id/line_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#a79182"
+                    app:layout_constraintTop_toBottomOf="@id/content_bg" />
+
+                <TextView
+                    android:id="@+id/content_bg"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="-10dp"
+                    android:background="#fff0e1"
+                    app:layout_constraintBottom_toBottomOf="@id/content_text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/content_text" />
+
+                <EditText
+                    android:id="@+id/content_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@null"
+                    android:editable="true"
+                    android:fontFamily="@font/pt_serif"
+                    android:inputType="textLongMessage|textMultiLine"
+                    android:lineSpacingExtra="0sp"
+                    android:minLines="5"
+                    android:textAlignment="viewStart"
+                    android:textColor="#a79182"
+                    android:textColorHint="#a79182"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@id/line_top"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/line_bottom" />
+
+                <TextView
+                    android:id="@+id/from_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/pt_serif_bold_italic"
+                    android:text="From:"
+                    android:textColor="#a79182"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/content_bg" />
+
+                <EditText
+                    android:id="@+id/from_name_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@null"
+                    android:fontFamily="@font/pt_serif_bold_italic"
+                    android:inputType="textLongMessage|textMultiLine"
+                    android:textColor="#a79182"
+                    android:textColorHint="#a79182"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/from_text"
+                    app:layout_constraintTop_toTopOf="@+id/from_text" />
+
+                <EditText
+                    android:id="@+id/to_name_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:fontFamily="@font/pt_serif_bold_italic"
+                    android:inputType="textLongMessage|textMultiLine"
+                    android:textColor="#a79182"
+                    android:textColorHint="#a79182"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/to_text"
+                    app:layout_constraintTop_toTopOf="@id/to_text" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/color_palate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <Button
+                android:id="@+id/send_button"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#D2B5A0"
+                android:capitalize="none"
+                android:fontFamily="@font/pt_serif_bold"
+                android:text="Send"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/color_palate" />
+
+            <Button
+                android:id="@+id/draft_button"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#D2B5A0"
+                android:capitalize="none"
+                android:fontFamily="@font/pt_serif_bold"
+                android:text="Draft"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/send_button"
+                app:layout_constraintTop_toBottomOf="@+id/color_palate" />
+
+            <ImageButton
+                android:id="@+id/delete_button"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:background="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/draft_button"
+                app:layout_constraintStart_toEndOf="@+id/edit_text"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+                app:layout_constraintTop_toTopOf="@+id/draft_button"
+                app:srcCompat="@drawable/trash_button" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/pt_serif_bold"
+                android:text="Color:"
+                android:textColor="#a79182"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+</ScrollView>

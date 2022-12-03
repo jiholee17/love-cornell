@@ -4,11 +4,15 @@ package com.example.lovecornellandroid.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.lovecornellandroid.R;
@@ -18,10 +22,34 @@ import java.lang.String;
 
 public final class FragmentPostBinding implements ViewBinding {
   @NonNull
-  private final FrameLayout rootView;
+  private final ScrollView rootView;
+
+  @NonNull
+  public final RecyclerView colorPalate;
 
   @NonNull
   public final ConstraintLayout constraintLayout;
+
+  @NonNull
+  public final ConstraintLayout constraintLayout2;
+
+  @NonNull
+  public final TextView contentBg;
+
+  @NonNull
+  public final EditText contentText;
+
+  @NonNull
+  public final ImageButton deleteButton;
+
+  @NonNull
+  public final Button draftButton;
+
+  @NonNull
+  public final EditText fromNameText;
+
+  @NonNull
+  public final TextView fromText;
 
   @NonNull
   public final TextView headBg;
@@ -32,19 +60,55 @@ public final class FragmentPostBinding implements ViewBinding {
   @NonNull
   public final TextView headText2;
 
-  private FragmentPostBinding(@NonNull FrameLayout rootView,
-      @NonNull ConstraintLayout constraintLayout, @NonNull TextView headBg,
-      @NonNull TextView headText, @NonNull TextView headText2) {
+  @NonNull
+  public final View lineBottom;
+
+  @NonNull
+  public final View lineTop;
+
+  @NonNull
+  public final Button sendButton;
+
+  @NonNull
+  public final TextView textView6;
+
+  @NonNull
+  public final EditText toNameText;
+
+  @NonNull
+  public final TextView toText;
+
+  private FragmentPostBinding(@NonNull ScrollView rootView, @NonNull RecyclerView colorPalate,
+      @NonNull ConstraintLayout constraintLayout, @NonNull ConstraintLayout constraintLayout2,
+      @NonNull TextView contentBg, @NonNull EditText contentText, @NonNull ImageButton deleteButton,
+      @NonNull Button draftButton, @NonNull EditText fromNameText, @NonNull TextView fromText,
+      @NonNull TextView headBg, @NonNull TextView headText, @NonNull TextView headText2,
+      @NonNull View lineBottom, @NonNull View lineTop, @NonNull Button sendButton,
+      @NonNull TextView textView6, @NonNull EditText toNameText, @NonNull TextView toText) {
     this.rootView = rootView;
+    this.colorPalate = colorPalate;
     this.constraintLayout = constraintLayout;
+    this.constraintLayout2 = constraintLayout2;
+    this.contentBg = contentBg;
+    this.contentText = contentText;
+    this.deleteButton = deleteButton;
+    this.draftButton = draftButton;
+    this.fromNameText = fromNameText;
+    this.fromText = fromText;
     this.headBg = headBg;
     this.headText = headText;
     this.headText2 = headText2;
+    this.lineBottom = lineBottom;
+    this.lineTop = lineTop;
+    this.sendButton = sendButton;
+    this.textView6 = textView6;
+    this.toNameText = toNameText;
+    this.toText = toText;
   }
 
   @Override
   @NonNull
-  public FrameLayout getRoot() {
+  public ScrollView getRoot() {
     return rootView;
   }
 
@@ -69,9 +133,57 @@ public final class FragmentPostBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.constraint_layout;
+      id = R.id.color_palate;
+      RecyclerView colorPalate = ViewBindings.findChildViewById(rootView, id);
+      if (colorPalate == null) {
+        break missingId;
+      }
+
+      id = R.id.constraintLayout;
       ConstraintLayout constraintLayout = ViewBindings.findChildViewById(rootView, id);
       if (constraintLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.constraintLayout2;
+      ConstraintLayout constraintLayout2 = ViewBindings.findChildViewById(rootView, id);
+      if (constraintLayout2 == null) {
+        break missingId;
+      }
+
+      id = R.id.content_bg;
+      TextView contentBg = ViewBindings.findChildViewById(rootView, id);
+      if (contentBg == null) {
+        break missingId;
+      }
+
+      id = R.id.content_text;
+      EditText contentText = ViewBindings.findChildViewById(rootView, id);
+      if (contentText == null) {
+        break missingId;
+      }
+
+      id = R.id.delete_button;
+      ImageButton deleteButton = ViewBindings.findChildViewById(rootView, id);
+      if (deleteButton == null) {
+        break missingId;
+      }
+
+      id = R.id.draft_button;
+      Button draftButton = ViewBindings.findChildViewById(rootView, id);
+      if (draftButton == null) {
+        break missingId;
+      }
+
+      id = R.id.from_name_text;
+      EditText fromNameText = ViewBindings.findChildViewById(rootView, id);
+      if (fromNameText == null) {
+        break missingId;
+      }
+
+      id = R.id.from_text;
+      TextView fromText = ViewBindings.findChildViewById(rootView, id);
+      if (fromText == null) {
         break missingId;
       }
 
@@ -93,8 +205,46 @@ public final class FragmentPostBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentPostBinding((FrameLayout) rootView, constraintLayout, headBg, headText,
-          headText2);
+      id = R.id.line_bottom;
+      View lineBottom = ViewBindings.findChildViewById(rootView, id);
+      if (lineBottom == null) {
+        break missingId;
+      }
+
+      id = R.id.line_top;
+      View lineTop = ViewBindings.findChildViewById(rootView, id);
+      if (lineTop == null) {
+        break missingId;
+      }
+
+      id = R.id.send_button;
+      Button sendButton = ViewBindings.findChildViewById(rootView, id);
+      if (sendButton == null) {
+        break missingId;
+      }
+
+      id = R.id.textView6;
+      TextView textView6 = ViewBindings.findChildViewById(rootView, id);
+      if (textView6 == null) {
+        break missingId;
+      }
+
+      id = R.id.to_name_text;
+      EditText toNameText = ViewBindings.findChildViewById(rootView, id);
+      if (toNameText == null) {
+        break missingId;
+      }
+
+      id = R.id.to_text;
+      TextView toText = ViewBindings.findChildViewById(rootView, id);
+      if (toText == null) {
+        break missingId;
+      }
+
+      return new FragmentPostBinding((ScrollView) rootView, colorPalate, constraintLayout,
+          constraintLayout2, contentBg, contentText, deleteButton, draftButton, fromNameText,
+          fromText, headBg, headText, headText2, lineBottom, lineTop, sendButton, textView6,
+          toNameText, toText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

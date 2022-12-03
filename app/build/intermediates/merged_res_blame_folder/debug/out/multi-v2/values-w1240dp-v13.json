@@ -1,16 +1,16 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.lovecornellandroid.app-mergeDebugResources-45:/values-w1240dp-v13/values-w1240dp-v13.xml",
+            "outputFile": "com.example.lovecornellandroid.app-mergeDebugResources-46:/values-w1240dp-v13/values-w1240dp-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\zhoux\\Desktop\\Cornell\\CS1998_Android\\Hackathon\\love-cornell\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
                     "from": {
                         "startLines": "2,1",
                         "startColumns": "4,4",
-                        "startOffsets": "59,16",
+                        "startOffsets": "61,17",
                         "endColumns": "58,42",
-                        "endOffsets": "113,54"
+                        "endOffsets": "115,55"
                     },
                     "to": {
                         "startLines": "2,3",

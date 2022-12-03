@@ -110,7 +110,7 @@ fun register( email : String, password : String, callback : (AccountResponse) ->
                 }
                 catch(e : ProtocolException) {
                     e.printStackTrace()
-                    register(email, password, callback)
+                    login(email, password, callback)
                 }
 
 
@@ -153,17 +153,11 @@ fun postLetter( receiver : String, sender : String, content : String, color : St
                 val jsonAdapter: JsonAdapter<Letter> =
                     moshi.adapter(Letter::class.java)
 
-                try {
-                    val letter = jsonAdapter.fromJson(body!!.source())
+                val letter = jsonAdapter.fromJson(body!!.source())
 
-                    Log.d("body",letter.toString())
-                    if (letter != null) {
-                        callback(letter)
-                    }
-                }
-                catch(e : ProtocolException) {
-                    e.printStackTrace()
-                    postLetter(receiver, sender, content, color, callback)
+                Log.d("body",letter.toString())
+                if (letter != null) {
+                    callback(letter)
                 }
 
 
@@ -206,18 +200,13 @@ fun createDraft( receiver : String, sender : String, content : String, color : S
                 val jsonAdapter: JsonAdapter<Draft> =
                     moshi.adapter(Draft::class.java)
 
-                try {
-                    val draft = jsonAdapter.fromJson(body!!.source())
+                val draft = jsonAdapter.fromJson(body!!.source())
 
-                    Log.d("body",draft.toString())
-                    if (draft != null) {
-                        callback(draft)
-                    }
+                Log.d("body",draft.toString())
+                if (draft != null) {
+                    callback(draft)
                 }
-                catch(e : ProtocolException) {
-                    e.printStackTrace()
-                    createDraft(receiver, sender, content, color, token, callback)
-                }
+
 
 
             }
@@ -252,17 +241,11 @@ fun postDraft(id : String, callback : (Letter) -> Unit) {
                 val jsonAdapter: JsonAdapter<Letter> =
                     moshi.adapter(Letter::class.java)
 
-                try {
-                    val letter = jsonAdapter.fromJson(body!!.source())
+                val letter = jsonAdapter.fromJson(body!!.source())
 
-                    Log.d("body",letter.toString())
-                    if (letter != null) {
-                        callback(letter)
-                    }
-                }
-                catch(e : ProtocolException) {
-                    e.printStackTrace()
-                    postDraft(id, callback)
+                Log.d("body",letter.toString())
+                if (letter != null) {
+                    callback(letter)
                 }
 
 

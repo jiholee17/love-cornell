@@ -60,7 +60,7 @@
         android:backgroundTint="#D2B5A0"
         android:capitalize="none"
         android:fontFamily="@font/pt_serif_bold"
-        android:text="Log in"
+        android:text="Sign up"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

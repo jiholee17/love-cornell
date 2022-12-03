@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.lovecornellandroid.app-mergeDebugResources-45:/values-en-rGB/values-en-rGB.xml",
+            "outputFile": "com.example.lovecornellandroid.app-mergeDebugResources-46:/values-en-rGB/values-en-rGB.xml",
             "map": [
                 {
                     "source": "C:\\Users\\zhoux\\.gradle\\caches\\transforms-3\\35247393b79a5fe3c4f500e2adf3d76f\\transformed\\appcompat-1.5.1\\res\\values-en-rGB\\values-en-rGB.xml",
